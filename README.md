@@ -62,6 +62,19 @@ This project is an end-to-end data analysis solution designed to extract critica
      - Profit margin analysis by branch and category.
    - **Documentation**: Keep clear notes of each query's objective, approach, and results.
 
+'''sql
+
+ SELECT 
+	city,
+	category,
+	MIN(rating) as min_rating,
+    MAX(rating) as max_rating,
+    AVG(rating) as avg_rating
+FROM walmart
+GROUP BY 1,2;
+'''
+
+
 ### 10. Project Publishing and Documentation
    - **Documentation**: Maintain well-structured documentation of the entire process in Markdown or a Jupyter Notebook.
    - **Project Publishing**: Publish the completed project on GitHub or any other version control platform, including:
